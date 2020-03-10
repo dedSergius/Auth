@@ -15,10 +15,10 @@
 <!-- Bootstrap 4 requires Popper.js -->
 <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 
-<script src="scripts/bootstrap-datepicker.min.js"></script>
-<script src="scripts/locales/bootstrap-datepicker.ru.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
 
-<script src="scripts/flat-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.min.js"></script>
 <?
 if (file_exists(__DIR__ . "/../../../public/scripts/pages/" . $this->page . ".js")) {
     echo "<script>\n";

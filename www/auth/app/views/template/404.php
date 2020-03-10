@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>404</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
