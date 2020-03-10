@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+    nginx:
+        image: nginx:latest
+        container_name: nginx
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./hosts:/etc/nginx/conf.d
+            - ./www:/var/www
+            - ./logs:/var/log/nginx
+        links:
+            - php
+    php:
+        build: ./images/php
+        container_name: php
+        links:
+            - mysql:db
+        volumes:
+            - ./www:/var/www
+    mysql:
+        image: mysql:8
+        container_name: mysql
+        command: --innodb_use_native_aio=0
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./mysql:/var/lib/mysql
+        environment:
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: secret
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: phpmyadmin
+        ports:
+            - "8081:80"
+        links:
+            - mysql:db
+        environment:
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: secret
+        

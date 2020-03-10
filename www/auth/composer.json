@@ -1,0 +1,17 @@
+{
+  "name": "lukinysega/auth",
+  "description": "A simple user authorization and registration application.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Sergey Lukin",
+      "email": "contact@lukin.site"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
