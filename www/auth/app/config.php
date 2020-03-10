@@ -5,7 +5,7 @@ return [
     // Core Config
     // =========================================================================
     "DATABASE_HOST" => "192.168.99.100:3306",
-    "DATABASE_NAME" => "test_db",
+    "DATABASE_NAME" => "db",
     "DATABASE_USERNAME" => "root",
     "DATABASE_PASSWORD" => "secret",
     // 
